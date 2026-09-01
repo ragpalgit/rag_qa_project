@@ -1,0 +1,42 @@
+[
+  {
+    "user_input": "What login methods does kayak.com support?",
+    "reference": "Kayak supports email + password, Google OAuth 2.0, Facebook Login, Apple Sign-In (iOS app and Safari web only), and a magic link passwordless option currently in limited rollout on mobile."
+  },
+  {
+    "user_input": "What happens after 5 failed login attempts?",
+    "reference": "5 failed login attempts within a 10-minute window locks the account for 15 minutes and triggers an email alert to the account owner."
+  },
+  {
+    "user_input": "How long does a login session last if I don't check 'Remember me'?",
+    "reference": "Without 'Remember me', the session expires after 24 hours of inactivity."
+  },
+  {
+    "user_input": "How long is a password reset link valid, and can it be reused?",
+    "reference": "The password reset link is valid for 30 minutes and can only be used once (single-use)."
+  },
+  {
+    "user_input": "What rate limiting is applied to the login endpoint?",
+    "reference": "The /auth/login endpoint enforces a limit of 20 requests per minute per IP address; requests beyond that threshold receive HTTP 429 and trigger an hCaptcha challenge."
+  },
+  {
+    "user_input": "What token format and expiry does Kayak use after a successful login?",
+    "reference": "Kayak issues a short-lived JWT access token with a 15-minute expiry, plus a refresh token stored as an HttpOnly, Secure, SameSite=Strict cookie."
+  },
+  {
+    "user_input": "What happens to other sessions when a user resets their password?",
+    "reference": "All active sessions for the account are automatically logged out when a password reset occurs, requiring re-login on every device."
+  },
+  {
+    "user_input": "How does Kayak prevent revealing whether an email address is registered?",
+    "reference": "Kayak uses generic error messaging for failed logins and the same generic confirmation message on password reset requests, so the system never reveals whether a given email exists in it."
+  },
+  {
+    "user_input": "What is the minimum password requirement for a Kayak account?",
+    "reference": "Passwords must be at least 10 characters long, include at least one number and one symbol, and are checked against the Have I Been Pwned breach corpus at signup and password reset."
+  },
+  {
+    "user_input": "Can a user log in to Kayak using cryptocurrency wallet authentication?",
+    "reference": "Kayak does not support cryptocurrency wallet authentication; this is not one of the supported login methods."
+  }
+]

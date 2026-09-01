@@ -1,0 +1,13 @@
+langchain==0.3.*
+langchain-community==0.3.*
+langchain-openai==0.2.*
+langchain-huggingface==0.1.*
+langchain-chroma==0.1.*
+langgraph==0.2.*
+chromadb==0.5.*
+sentence-transformers==3.*
+docx2txt==0.8
+ragas==0.2.*
+datasets==3.*
+python-dotenv==1.*
+streamlit==1.*
