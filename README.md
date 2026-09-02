@@ -63,7 +63,7 @@ streamlit run app.py
 ## Releases and public download counts
 
 This repository now includes a GitHub Actions release workflow at
-`/home/runner/work/rag_qa_project/rag_qa_project/.github/workflows/release.yml`.
+`.github/workflows/release.yml`.
 When you push a tag such as `v0.1.0`, GitHub will create a release and attach
 downloadable `.zip` and `.tar.gz` archives.
 
