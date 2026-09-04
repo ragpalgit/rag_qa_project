@@ -59,3 +59,21 @@ graph. The JSON must be a list of objects containing `user_input` and `reference
 pip install -r requirements.txt
 streamlit run app.py
 ```
+
+## Releases and public download counts
+
+This repository now includes a GitHub Actions release workflow at
+`.github/workflows/release.yml`.
+When you push a tag such as `v0.1.0`, GitHub will create a release and attach
+downloadable `.zip` and `.tar.gz` archives.
+
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+After the workflow finishes:
+
+- Open the repository's **Releases** page.
+- Each attached asset shows its public **download count**.
+- The count applies to the uploaded release assets, not to repository clones.
